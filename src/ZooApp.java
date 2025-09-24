@@ -22,7 +22,7 @@ public class ZooApp {
 
     private void featuresOfAnimals(){
         System.out.println();
-        System.out.println("This is what all of the animals does:");
+        System.out.println("This is what all of the animals do:");
 
         for (Animal animal : animals) {
             System.out.println();
