@@ -6,17 +6,20 @@ public class Owl extends Animal implements Flyable{
 
     @Override
     public void makeSound() {
-        System.out.println(this.name + " says: Whoo whoo!");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " says: 'Whoo whoo!'");
     }
 
     @Override
     public void eat() {
-        System.out.println(this.name + " eats: Mice");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " eats: Mice");
     }
 
     @Override
     public void fly() {
-        System.out.println(this.name + " flies between the trees");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " flies between the trees");
 
     }
 }

@@ -6,12 +6,14 @@ public class Sloth extends Animal{
 
     @Override
     public void makeSound() {
-        System.out.println(this.name + " says: Zzz Zzz...");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " says: 'Zzz Zzz...'");
     }
 
     @Override
     public void eat() {
-        System.out.println(this.name + " eats: Leafs");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " eats: Leafs");
     }
 
 }

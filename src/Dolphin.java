@@ -7,16 +7,19 @@ public class Dolphin extends Animal implements Swimmable{
 
     @Override
     public void makeSound() {
-        System.out.println(this.name + " says: Squeak squeak!");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " says: 'Squeak squeak!'");
     }
 
     @Override
     public void eat() {
-        System.out.println(this.name + " eats: Sardines");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " eats: Sardines");
     }
 
     @Override
     public void swim() {
-        System.out.println(this.name + " swims in the big blue ocean");
+        System.out.println(this.name + " the " + getClass().getName() +
+                " swims in the big blue ocean");
     }
 }
