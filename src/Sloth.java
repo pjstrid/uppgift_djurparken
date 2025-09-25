@@ -13,7 +13,7 @@ public class Sloth extends Animal{
     @Override
     public void eat() {
         System.out.println(this.name + " the " + getClass().getName() +
-                " eats: Leafs");
+                " eats leafs");
     }
 
 }

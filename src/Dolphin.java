@@ -14,7 +14,7 @@ public class Dolphin extends Animal implements Swimmable{
     @Override
     public void eat() {
         System.out.println(this.name + " the " + getClass().getName() +
-                " eats: Sardines");
+                " eats sardines");
     }
 
     @Override

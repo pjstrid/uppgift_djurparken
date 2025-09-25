@@ -13,7 +13,7 @@ public class Owl extends Animal implements Flyable{
     @Override
     public void eat() {
         System.out.println(this.name + " the " + getClass().getName() +
-                " eats: Mice");
+                " eats mice");
     }
 
     @Override

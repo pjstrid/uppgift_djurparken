@@ -13,7 +13,7 @@ public class Goose extends Animal implements Flyable, Swimmable{
     @Override
     public void eat() {
         System.out.println(this.name + " the " + getClass().getName() +
-                " eats: Breadcrumbs");
+                " eats breadcrumbs");
 
     }
 
