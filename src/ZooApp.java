@@ -42,11 +42,10 @@ public class ZooApp {
             animal.eat();
             animal.makeSound();
 
-            if (animal instanceof Swimmable s){     // Hämtar info från interface,
-                s.swim();                           // om djuret kan simma skrivs det ut,
-                                                    // annars ingen utskrift här på det djuret
+            if (animal instanceof Swimmable s){     // om djuret kan simma skrivs det ut, hämtar info från interface
+                s.swim();                           // annars ingen utskrift här på det djuret
             }
-            if (animal instanceof Flyable f){       // Hämtar info från interface,
+            if (animal instanceof Flyable f){       //  hämtar info från interface
                 f.fly();                            // om djuret kan flyga skrivs det ut,
                                                     // annars ingen utskrift här på det djuret
             }
