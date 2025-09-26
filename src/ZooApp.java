@@ -10,7 +10,7 @@ public class ZooApp {
         initList();
         System.out.println("To start, press 'ENTER'");
         InputHandler.getString(); // Denna rad gör så det krävs ett enter-tryck för att fortsätta
-        presentAnimals();
+        greetingFromAnimals();
         InputHandler.getString(); // Samma här
         featuresOfAnimals();
         InputHandler.getString(); // Samma här
@@ -20,11 +20,11 @@ public class ZooApp {
 
 
 // Metod som gör så att djuren presenterar sig
-    public static void presentAnimals() {
-        System.out.println("All of the animals now presents themself:");
+    public static void greetingFromAnimals() {
+        System.out.println("Here is a greeting from all of the animals:");
         System.out.println();
         for (Animal animal : animals) {
-            System.out.println(animal.name + ": " + "'I am " +             // Hämtar namnet på djuret från ArrayList
+            System.out.println(animal.name + ": " + "'Hi, I am " +             // Hämtar namnet på djuret från ArrayList
                                  animal.name + " the " +
                                     animal.getClass().getName() + "'");    // Hämtar vilken klass djuret tillhör
         }
@@ -35,7 +35,7 @@ public class ZooApp {
 
 // Metod som visar alla attribut för varje djur
     public static void featuresOfAnimals(){
-        System.out.println("This is what all of the animals can do:");
+        System.out.println("This is how the animals eat, speak and their favourite activity:");
 
         for (Animal animal : animals) {
             System.out.println();
